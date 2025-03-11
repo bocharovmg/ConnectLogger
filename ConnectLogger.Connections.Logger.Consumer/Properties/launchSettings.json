@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConnectLogger.Connections.Logger.Consumer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

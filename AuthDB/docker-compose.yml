@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  connectlogger_auth_db:
+    image: connectlogger_auth_db_image
+    hostname: connectlogger.auth.db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: connectlogger_auth_db_instance
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: UserDB
+    volumes:
+      - connectlogger-auth-db-data:/var/lib/postgresql/data
+      - ./postgresql.conf:/etc/postgresql/postgresql.conf
+      - ./initdb:/docker-entrypoint-initdb.d
+    restart: always
+    networks:
+      - connectlogger-network
+
+networks:
+  connectlogger-network:
+    external: true
+
+volumes:
+  connectlogger-auth-db-data: 
+    driver: local
+

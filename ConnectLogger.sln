@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectLogger.Auth.Api", "ConnectLogger.Auth.Api\ConnectLogger.Auth.Api.csproj", "{985B246D-291F-4FDA-A3C9-1A1A3F5D3E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectLogger.Connections.Api", "ConnectLogger.Connections.Api\ConnectLogger.Connections.Api.csproj", "{82982C42-AC24-4EB2-9AFE-46B23279A657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectLogger.Connections.Logger.Consumer", "ConnectLogger.Connections.Logger.Consumer\ConnectLogger.Connections.Logger.Consumer.csproj", "{BCDD4A2F-7C50-4CD9-8CDE-19E2669EDFE9}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{76FAE701-CB58-42FC-8D66-0ACA6C5BFD08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{985B246D-291F-4FDA-A3C9-1A1A3F5D3E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985B246D-291F-4FDA-A3C9-1A1A3F5D3E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985B246D-291F-4FDA-A3C9-1A1A3F5D3E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985B246D-291F-4FDA-A3C9-1A1A3F5D3E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82982C42-AC24-4EB2-9AFE-46B23279A657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82982C42-AC24-4EB2-9AFE-46B23279A657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82982C42-AC24-4EB2-9AFE-46B23279A657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82982C42-AC24-4EB2-9AFE-46B23279A657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCDD4A2F-7C50-4CD9-8CDE-19E2669EDFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDD4A2F-7C50-4CD9-8CDE-19E2669EDFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDD4A2F-7C50-4CD9-8CDE-19E2669EDFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDD4A2F-7C50-4CD9-8CDE-19E2669EDFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FAE701-CB58-42FC-8D66-0ACA6C5BFD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FAE701-CB58-42FC-8D66-0ACA6C5BFD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FAE701-CB58-42FC-8D66-0ACA6C5BFD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FAE701-CB58-42FC-8D66-0ACA6C5BFD08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

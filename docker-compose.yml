@@ -1,0 +1,34 @@
+﻿version: '3.8'
+
+services:
+###########################
+  connectlogger.auth.api:
+    image: ${DOCKER_REGISTRY-}connectloggerauthapi
+    build:
+      context: .
+      dockerfile: ConnectLogger.Auth.Api/Dockerfile
+    networks:
+      - connectlogger-network
+
+###########################
+  connectlogger.connections.api:
+    image: ${DOCKER_REGISTRY-}connectloggerconnectionsapi
+    build:
+      context: .
+      dockerfile: ConnectLogger.Connections.Api/Dockerfile
+    networks:
+      - connectlogger-network
+
+###########################
+  connectlogger.connections.logger.consumer:
+    image: ${DOCKER_REGISTRY-}connectloggerconnectionsloggerconsumer
+    build:
+      context: .
+      dockerfile: ConnectLogger.Connections.Logger.Consumer/Dockerfile
+    networks:
+      - connectlogger-network
+
+###########################
+networks:
+  connectlogger-network:
+    external: true

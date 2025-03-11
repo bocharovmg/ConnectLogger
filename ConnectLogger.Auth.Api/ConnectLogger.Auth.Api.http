@@ -1,0 +1,6 @@
+@ConnectLogger.Auth.Api_HostAddress = http://localhost:5232
+
+GET {{ConnectLogger.Auth.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
